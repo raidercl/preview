@@ -1,0 +1,27 @@
+#a1{
+       
+        margin-left: 100px; 
+        margin-right: 100px;
+        margin-top: 10px;
+        padding-left: 650px;
+
+        border-style: dashed;
+        width: 250px;
+        background-color: aquamarine;
+
+        
+    }
+
+#s2{
+    font-size: 40px;
+    margin: 100px;
+}
+
+
+
+#a3{
+
+    font-size: 20px;
+    border-radius: 40px;
+    
+}
