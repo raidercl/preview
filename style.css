@@ -25,3 +25,11 @@
     border-radius: 40px;
     
 }
+
+div{
+    border: 1px solid
+}
+
+div.container{
+    margin-top: 150px;
+}
