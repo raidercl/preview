@@ -1,4 +1,4 @@
-#a1{
+#a{
        
         margin-left: 100px; 
         margin-right: 100px;
@@ -32,4 +32,54 @@ div{
 
 div.container{
     margin-top: 150px;
+}
+
+
+
+#menu-lateral{
+    height: 800px;
+    background-color: rebeccapurple;
+    color: white;
+}
+
+#content{
+    background-color: aquamarine;
+    height: 800px;
+}
+
+#menu-button{
+    background-color: coral;
+}
+
+#title{
+    background-color: beige;
+}
+
+.margin-bottom {
+    margin-bottom: 15px;
+}
+
+.rrss {
+    background-color: blue;
+    height: px;
+}
+
+.news {
+    background-color: chartreuse;
+    height: 150px;
+}
+
+#titledown{
+    background-color: blue;
+    height: 45px;
+}
+
+.papers{
+    background-color: crimson;
+    height: 400px;
+}
+
+.paper{
+    background-color: cyan;
+    height: 120px;
 }
