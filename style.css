@@ -37,7 +37,7 @@ div.container{
 
 
 #menu-lateral{
-    height: 800px;
+    height: 815px;
     background-color: rebeccapurple;
     color: white;
 }
@@ -47,12 +47,25 @@ div.container{
     height: 800px;
 }
 
-#menu-button{
+#menubutton{
     background-color: coral;
+    height: 70px;
+
 }
 
 #title{
     background-color: beige;
+}
+
+#menusecundario{
+    background-color: chartreuse;
+    height: 35px;
+
+}
+
+#seccion{
+    background-color: chocolate;
+    height: 70px;
 }
 
 .margin-bottom {
@@ -61,7 +74,7 @@ div.container{
 
 .rrss {
     background-color: blue;
-    height: px;
+    height:150px;
 }
 
 .news {
@@ -83,3 +96,10 @@ div.container{
     background-color: cyan;
     height: 120px;
 }
+
+.repo{
+    background-color: black;
+    height: 150px;
+}
+ 
+
