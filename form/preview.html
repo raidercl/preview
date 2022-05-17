@@ -29,12 +29,14 @@
 
         <div class="input-group mb-3">
           <span class="input-group-text" id="basic-addon1">@</span>
-          <input type="text" class="form-control" placeholder="Nombre de usuario" aria-label="Nombre de usuario" aria-describedby="basic-addon1" >
+          <input type="text" class="form-control" id="nombredeusuario" placeholder="Nombre de usuario" aria-label="Nombre de usuario" aria-describedby="basic-addon1" >
         </div>
         
         <div class="input-group mb-3">
           <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon2">
-          <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" aria-describedby="basic-addon2">
+
+          <input type="text" class="form-control" id="apellido" placeholder="Apellido" aria-label="Apellido" aria-describedby="basic-addon2">
+
           <input type="text" class="form-control" id="edad" placeholder="edad" aria-label="edad" aria-describedby="basic-addon2">
           
   
@@ -42,18 +44,21 @@
           
         
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Fecha de nacimiento" aria-label="Fecha de nacimiento">
+          <input type="text" class="form-control" id="correo" placeholder="Correo Electronico" aria-label="Correo Electronico">
+          <div>
+            <input type="text" class="form-control" id="fecha" placeholder="Fecha de nacimiento" aria-label="Fecha de nacimiento">
+          </div>
           
         </div>
         
         <div class="input-group">
           <span class="input-group-text">Mensaje</span>
-          <textarea class="form-control" aria-label="With textarea"></textarea>
+          <textarea class="form-control" id= "mensaje" aria-label="With textarea"></textarea>
         </div> 
 
         <div class="d-grid gap-2 col-6 mx-auto">
           <button onclick="Enviar()" class="btn btn-primary" id ="buttonbtn" type="button">ENVIAR</button>
-          <button onclick="Enviar()" class="btn btn-primary" id ="buttonli" type="button">Lista</button>
+          <button onclick="list()" class="btn btn-primary" id ="buttonli" type="button">Lista</button>
         </div>
       </div>
     </div>

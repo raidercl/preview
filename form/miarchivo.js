@@ -30,16 +30,65 @@ var alertTrigger = document.getElementById()
    var obj = new Object()
 
    function Enviar(){
-      let elemento = document.getElementById("Nombre")
+      flag = 0
+      let elemento_nombreusuario = document.getElementById("nombredeusuario")
       let elemento_nombre = document.getElementById("nombre")
+      let elemento_apellido = document.getElementById("apellido")
       let elemento_edad = document.getElementById("edad")
+      let elemento_fecha = document.getElementById("fecha")
+      let elemento_mensaje = document.getElementById("mensaje")
+
       //console.log(elemento.value)
+
+      
+
+
       let contacto = new Object()
       contacto.nombre = elemento_nombre.value
       contacto.edad = elemento_edad.value
+      contacto.apellido = elemento_apellido.value
+      contacto.nombreusuario = elemento_nombreusuario.value
+      contacto.fecha = elemento_fecha.value
+      contacto.mensaje = elemento_mensaje.value
+
+      if(elemento_nombreusuario.value == ""){
+         flag = 1
+      }
+      if(elemento_nombre.value == ""){
+         flag = 1
+      }
+      if(elemento_edad.value == ""){
+         flag = 1
+      }
+      if(elemento_apellido.value == ""){
+         flag = 1
+      }
+      if(elemento_fecha.value == ""){
+         flag = 1
+      }
+      if(elemento_mensaje.value == ""){
+         flag = 1
+      }
       
       elemento_nombre.value = ""
       elemento_edad.value = ""
+      elemento_apellido.value = ""
+      elemento_nombreusuario.value = ""
+      elemento_fecha.value = ""
+      elemento_mensaje.value = ""
+
+
+      
+      let msj = ""
+      if(flag == ""){
+         console.log(contacto)
+         arreglo.push(contacto)
+         
+   
+      }else{
+         alert("No paso las validaciones, CAMPOS VACIOS!")
+      }
+      
       
 
       console.log(contacto)
