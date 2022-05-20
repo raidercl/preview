@@ -31,55 +31,46 @@ var alertTrigger = document.getElementById()
 
    function Enviar(){
       flag = 0
-      let elemento_nombreusuario = document.getElementById("nombredeusuario")
-      let elemento_nombre = document.getElementById("nombre")
-      let elemento_apellido = document.getElementById("apellido")
-      let elemento_edad = document.getElementById("edad")
-      let elemento_fecha = document.getElementById("fecha")
-      let elemento_mensaje = document.getElementById("mensaje")
+      let elemento_marca = document.getElementById("Marca")
+      let elemento_modelo = document.getElementById("Modelo")
+      let elemento_anio = document.getElementById("Anio")
+
 
       //console.log(elemento.value)
+      valor = document.getElementById("Anio").value;
+      if ( isNaN(valor) ) {
+        alert("SOLO VALOR NUMERICO GIL")
+         return false;
+      }
+
 
       
-
 
       let contacto = new Object()
-      contacto.nombre = elemento_nombre.value
-      contacto.edad = elemento_edad.value
-      contacto.apellido = elemento_apellido.value
-      contacto.nombreusuario = elemento_nombreusuario.value
-      contacto.fecha = elemento_fecha.value
-      contacto.mensaje = elemento_mensaje.value
-
-      if(elemento_nombreusuario.value == ""){
-         flag = 1
-      }
-      if(elemento_nombre.value == ""){
-         flag = 1
-      }
-      if(elemento_edad.value == ""){
-         flag = 1
-      }
-      if(elemento_apellido.value == ""){
-         flag = 1
-      }
-      if(elemento_fecha.value == ""){
-         flag = 1
-      }
-      if(elemento_mensaje.value == ""){
-         flag = 1
-      }
+      contacto.marca = elemento_marca.value
+      contacto.modelo = elemento_modelo.value
+      contacto.anio = elemento_anio.value
       
-      elemento_nombre.value = ""
-      elemento_edad.value = ""
-      elemento_apellido.value = ""
-      elemento_nombreusuario.value = ""
-      elemento_fecha.value = ""
-      elemento_mensaje.value = ""
+
+      if(elemento_marca.value == ""){
+         flag = 1
+      }
+      if(elemento_modelo.value == ""){
+         flag = 1
+      }
+      if(elemento_anio.value == ""){
+         flag = 1
+      }
+    
+      
+      elemento_marca.value = ""
+      elemento_modelo.value = ""
+      elemento_anio.value = ""
+      
 
 
       
-      let msj = ""
+      
       if(flag == ""){
          console.log(contacto)
          arreglo.push(contacto)
@@ -91,12 +82,17 @@ var alertTrigger = document.getElementById()
       
       
 
-      console.log(contacto)
-      arreglo.push(contacto)
+  
 
    }
 
    function list(){
       elemento_respuesta = document.getElementById("resp-gral")
       console.log(arreglo)
+   }
+
+   function listar(){
+      let resp = document.getElementById("resp")
+      let html = ""
+      arreglo.forEach
    }
